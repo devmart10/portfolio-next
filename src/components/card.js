@@ -11,7 +11,7 @@ const lorem =
 
 const Card = ({ title, href, children }) => {
   return (
-    <section className="p-4 mb-4 border border-indigo-700 rounded-lg md:p-8">
+    <section className="p-4 mb-4 bg-white rounded-lg md:p-8">
       <Link href={href}>
         <a className="block mb-4 text-3xl font-bold text-teal-700">{title}</a>
       </Link>
