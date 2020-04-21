@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./header";
+import Footer from "./footer";
 
 const Layout = ({ children }) => {
   return (
@@ -9,7 +10,7 @@ const Layout = ({ children }) => {
       </header>
       <main className="flex flex-col p-2 my-container">{children}</main>
       <footer className="mt-auto">
-        <div className="py-1 text-center text-gray-100 bg-indigo-700">&copy; 2020 Devon Martin</div>
+        <Footer></Footer>
       </footer>
     </div>
   );
