@@ -9,6 +9,7 @@
     "postcss-preset-env": "^6.7.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-transition-group": "^4.3.0",
     "tailwindcss": "^1.2.0"
   },
   "devDependencies": {},

@@ -4,3 +4,25 @@
   @apply max-w-4xl;
   @apply mx-auto;
 }
+
+.header-dropdown-enter {
+  opacity: 0.01;
+  max-height: 0;
+}
+
+.header-dropdown-enter-active {
+  opacity: 1;
+  max-height: 4rem;
+  transition: all ease-in-out 300ms;
+}
+
+.header-dropdown-exit {
+  opacity: 1;
+  max-height: 4rem;
+}
+
+.header-dropdown-exit-active {
+  opacity: 0.01;
+  max-height: 0;
+  transition: all ease-in-out 300ms;
+}
