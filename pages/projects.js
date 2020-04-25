@@ -3,13 +3,13 @@ import Layout from "../src/components/layout";
 import Card from "../src/components/card";
 import DetailsSection from "../src/components/detailsSection";
 
-import { projects } from "../src/data/projects.json";
+import data from "../src/data/projects.json";
 
 const Projects = () => {
   return (
     <Layout>
       <Card title="Here's what I'm working on" href="">
-        {projects.map((project, index) => (
+        {data.map((project, index) => (
           <DetailsSection
             key={index}
             title={project.name}

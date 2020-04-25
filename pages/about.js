@@ -3,7 +3,7 @@ import Layout from "../src/components/layout";
 import Card from "../src/components/card";
 import DetailsSection from "../src/components/detailsSection";
 
-import { experiences } from "../src/data/work.json";
+import data from "../src/data/work.json";
 
 const About = () => {
   return (
@@ -15,13 +15,13 @@ const About = () => {
           iure dolor amet provident eligendi quo.
         </p>
         <h1 className="mb-4 text-xl">Work Experience</h1>
-        {experiences.map((exp, index) => (
+        {data.map((job, index) => (
           <DetailsSection
             key={index}
-            title={exp.name}
-            subtitle={exp.shortDesc}
-            label={exp.date}
-            body={exp.longDesc}
+            title={job.name}
+            subtitle={job.shortDesc}
+            label={job.date}
+            body={job.longDesc}
           ></DetailsSection>
         ))}
       </Card>

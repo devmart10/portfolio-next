@@ -5,18 +5,16 @@ import Card from "../src/components/card";
 import data from "../src/data/personal.json";
 
 const Contact = () => {
-  const { full_name, email, location, socials } = data;
-  const { github, twitter, linkedin } = socials;
   return (
     <Layout>
       <Card title="Contact" href="">
-        <p className="mb-1">{full_name}</p>
-        <p className="mb-1">{email}</p>
-        <p className="mb-1">{location}</p>
+        <p className="mb-1">{data.full_name}</p>
+        <p className="mb-1">{data.email}</p>
+        <p className="mb-1">{data.location}</p>
         <hr className="my-4" />
-        <p className="mb-1">{github}</p>
-        <p className="mb-1">{twitter}</p>
-        <p className="mb-1">{linkedin}</p>
+        <p className="mb-1">{data.socials.github}</p>
+        <p className="mb-1">{data.socials.twitter}</p>
+        <p className="mb-1">{data.socials.linkedin}</p>
       </Card>
     </Layout>
   );
