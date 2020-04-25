@@ -3,32 +3,7 @@ import Layout from "../src/components/layout";
 import Card from "../src/components/card";
 import DetailsSection from "../src/components/detailsSection";
 
-const projects = [
-  {
-    name: "BugTracker",
-    date: "Jan 2020 - Present",
-    shortDesc: "Simple issue tracking with authentication",
-    longDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error \
-        cumque possimus asperiores, at qui necessitatibus voluptatem sed ad \
-        libero cupiditate magni atque autem, enim quia amet expedita. Itaque \
-        autem explicabo quod fuga soluta! Labore eveniet enim et doloremque \
-        officiis laborum rerum explicabo atque iusto, consequuntur quo \
-        provident, praesentium quos?",
-  },
-  {
-    name: "Todoist Clone",
-    date: "Oct. 2019 - Present",
-    shortDesc: "Recreate the impressive functionality of Todoist",
-    longDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error \
-        cumque possimus asperiores, at qui necessitatibus voluptatem sed ad \
-        libero cupiditate magni atque autem, enim quia amet expedita. Itaque \
-        autem explicabo quod fuga soluta! Labore eveniet enim et doloremque \
-        officiis laborum rerum explicabo atque iusto, consequuntur quo \
-        provident, praesentium quos?",
-  },
-];
+import { projects } from "../src/data/projects.json";
 
 const Projects = () => {
   return (

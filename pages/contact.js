@@ -2,18 +2,21 @@ import React from "react";
 import Layout from "../src/components/layout";
 import Card from "../src/components/card";
 
+import data from "../src/data/personal.json";
+
 const Contact = () => {
+  const { full_name, email, location, socials } = data;
+  const { github, twitter, linkedin } = socials;
   return (
     <Layout>
       <Card title="Contact" href="">
-        <p className="mb-1">Devon Martin</p>
-        <p className="mb-1">devmart10@gmail.com</p>
-        <p className="mb-1">San Jose, CA</p>
-        <p className="mb-1">(925) 348-2316</p>
+        <p className="mb-1">{full_name}</p>
+        <p className="mb-1">{email}</p>
+        <p className="mb-1">{location}</p>
         <hr className="my-4" />
-        <p className="mb-1">devmart10@github.com</p>
-        <p className="mb-1">@devmart10</p>
-        <p className="mb-1">devon.martin@linkedin.com</p>
+        <p className="mb-1">{github}</p>
+        <p className="mb-1">{twitter}</p>
+        <p className="mb-1">{linkedin}</p>
       </Card>
     </Layout>
   );
