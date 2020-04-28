@@ -1,6 +1,4 @@
 import React from "react";
-import DetailsSection from "../components/detailsSection";
-
 import data from "../data/work.json";
 
 const Work = () => {
@@ -14,15 +12,21 @@ const Work = () => {
         dolor amet provident eligendi quo.
       </p>
       <h1 className="mb-4 text-xl">Work Experience</h1>
-      {data.map((job, index) => (
-        <DetailsSection
-          key={index}
-          title={job.name}
-          subtitle={job.shortDesc}
-          label={job.date}
-          body={job.longDesc}
-        ></DetailsSection>
-      ))}
+      {data.map((job, index) => {
+        const { name, date, shortDesc, longDesc } = job;
+        return (
+          <section className="relative mb-8" key={index}>
+            <div className="flex flex-col mb-2 md:flex-row md:items-baseline ">
+              <a href="#" className="font-bold underline">
+                {name}
+              </a>
+              <span className="italic md:ml-2">{shortDesc}</span>
+              <span className="text-sm text-gray-700 md:ml-auto">{date}</span>
+            </div>
+            <p className="py-2">{longDesc}</p>
+          </section>
+        );
+      })}
     </section>
   );
 };
