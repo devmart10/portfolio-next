@@ -20,7 +20,7 @@ const Links = ({ className }) => (
 const Header = () => {
   const [dropdown, setDropdown] = useState(false);
   return (
-    <div className="mb-4 text-lg text-gray-100 shadow-lg bg-primary">
+    <header className="mb-4 text-lg text-gray-100 shadow-lg bg-primary">
       <div className="p-2 my-container">
         <div className="flex items-center justify-between">
           <button
@@ -38,7 +38,7 @@ const Header = () => {
           <Links></Links>
         </CSSTransition>
       </div>
-    </div>
+    </header>
   );
 };
 
