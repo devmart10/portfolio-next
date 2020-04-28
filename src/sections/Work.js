@@ -1,12 +1,13 @@
 import React from "react";
-import Card from "../components/card";
 import DetailsSection from "../components/detailsSection";
 
 import data from "../data/work.json";
 
 const Work = () => {
   return (
-    <Card title="Resume" href="">
+    <section className="mb-4 bg-white card">
+      <a className="block mb-4 text-3xl font-bold text-primary">Resume</a>
+
       <h1 className="mb-4 text-xl">Summary of Qualifications</h1>
       <p className="mb-8">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolore quaerat error dolorum consectetur, iure
@@ -22,7 +23,7 @@ const Work = () => {
           body={job.longDesc}
         ></DetailsSection>
       ))}
-    </Card>
+    </section>
   );
 };
 

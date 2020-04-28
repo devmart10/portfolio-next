@@ -1,12 +1,12 @@
 import React from "react";
-import Card from "../components/card";
-import DetailsSection from "../components/detailsSection";
+// TODO import FA user icon
 
 const AboutMe = () => {
   return (
-    <Card title="About Me" href="">
-      <p className="mb-8">This is a little snippet about me.</p>
-    </Card>
+    <section className="mb-4 bg-white card">
+      <a className="block mb-4 text-3xl font-bold text-primary">About Me</a>
+      <p className="">This is a little snippet about me.</p>
+    </section>
   );
 };
 

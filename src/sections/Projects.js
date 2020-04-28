@@ -1,12 +1,12 @@
 import React from "react";
-import Card from "../components/card";
 import DetailsSection from "../components/detailsSection";
 
 import data from "../data/projects.json";
 
 const Projects = () => {
   return (
-    <Card title="Here's what I'm working on" href="">
+    <section className="mb-4 bg-white card">
+      <a className="block mb-4 text-3xl font-bold text-primary">Here's what I'm working on</a>
       {data.map((project, index) => (
         <DetailsSection
           key={index}
@@ -16,7 +16,7 @@ const Projects = () => {
           body={project.longDesc}
         ></DetailsSection>
       ))}
-    </Card>
+    </section>
   );
 };
 
