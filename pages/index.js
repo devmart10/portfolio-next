@@ -1,20 +1,18 @@
 import React from "react";
-import Card from "../src/components/card";
 import Layout from "../src/components/layout";
+
+import AboutMe from "../src/sections/AboutMe";
+import Projects from "../src/sections/Projects";
+import Contact from "../src/sections/Contact";
+import Work from "../src/sections/Work";
 
 const Index = () => {
   return (
     <Layout>
-      <Card title="About Me" href="/about"></Card>
-      <Card title="Projects" href="/projects">
-        <p>My latest project is called Schoolhub, check it out!</p>
-      </Card>
-      <Card title="Contact" href="/contact">
-        Contact me via email{" "}
-        <a href="mailto:devmart10@gmail.com" className="underline">
-          devmart10@gmail.com
-        </a>
-      </Card>
+      <AboutMe></AboutMe>
+      <Work></Work>
+      <Projects></Projects>
+      <Contact></Contact>
     </Layout>
   );
 };
