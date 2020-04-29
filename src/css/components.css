@@ -26,3 +26,13 @@
   max-height: 0;
   transition: all ease-in-out 300ms;
 }
+
+.card {
+  @apply p-4 rounded-lg shadow-lg;
+}
+
+@screen md {
+  .card {
+    @apply p-8;
+  }
+}
