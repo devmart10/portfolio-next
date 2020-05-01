@@ -1,14 +1,26 @@
 [
   {
     "name": "Chevron",
-    "date": "January 2019 - Present",
+    "date": "Jan. 2019 - Present",
+    "location": "San Ramon, CA",
     "shortDesc": "Software Engineer",
-    "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error cumque possimus asperiores, at qui necessitatibus voluptatem sed ad libero cupiditate magni atque autem, enim quia amet expedita. Itaque autem explicabo quod fuga soluta! Labore eveniet enim et doloremque officiis laborum rerum explicabo atque iusto, consequuntur quo provident, praesentium quos?"
+    "longDesc": "Designed, implemented, tested, and deployed multiple critical in-house business applications. Developed multiple automation tools to improve business efficiency, saving time and money. Provided excellent production support to business partners and new external vendors. Improved organization's project management practices by implementing Scrum framework",
+    "tech_stack": ["SQL Server", ".NET", "C#", "ServiceNow", "PowerApps", "Scrum Master"]
   },
   {
-    "name": "Restoration Robotics",
-    "date": "June 2018 - Sept. 2018",
-    "shortDesc": "Software Engineer - Intern",
-    "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error cumque possimus asperiores, at qui necessitatibus voluptatem sed ad libero cupiditate magni atque autem, enim quia amet expedita. Itaque autem explicabo quod fuga soluta! Labore eveniet enim et doloremque officiis laborum rerum explicabo atque iusto, consequuntur quo provident, praesentium quos?"
+    "name": "Chevron",
+    "date": "June 2019 - Sep. 2019",
+    "location": "San Ramon, CA",
+    "shortDesc": "Software Engineering Intern",
+    "longDesc": "Developed a service requesting app on multi-disciplinary team using low-code. Explored testing alternatives and formulated best practices regarding low-code development. Created documentation of recommended best practices to influence future company policy. Improved team's ability to manage projects and increased effectiveness of Agile practices",
+    "tech_stack": ["Scrum", "Outsystems", "Automated Testing Framework", "API Management", "Technical Documentation"]
+  },
+  {
+    "name": "Restoration Robotics, Inc.",
+    "date": "June 2017 - Sep. 2017",
+    "location": "Milpitas, CA",
+    "shortDesc": "Software Quality Assurance Intern",
+    "longDesc": "Researched and compiled an extensive how-to guide for using Microsoft TestHub. Used my guide to transition entire development team into using the new testing framework. Created a tool using Python and TestHub API for automatically generating reports, saving the company time",
+    "tech_stack": [".NET", "C#", "MS TestHub", "Python"]
   }
 ]

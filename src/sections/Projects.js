@@ -3,22 +3,28 @@ import data from "../data/projects.json";
 
 const Projects = () => {
   return (
-    <section className="mb-4 bg-white card">
-      <a className="block mb-4 text-3xl font-bold text-primary">Here's what I'm working on</a>
-      {data.map(({ name, date, shortDesc, longDesc }, index) => {
-        return (
-          <section className="relative mb-8" key={index}>
-            <div className="flex flex-col mb-2 md:flex-row md:items-baseline ">
-              <a href="#" className="font-bold underline">
-                {name}
-              </a>
-              <span className="italic md:ml-2">{shortDesc}</span>
-              <span className="text-sm text-gray-700 md:ml-auto">{date}</span>
+    <section id="projects">
+      <div className="mb-4 bg-white card">
+        <h2 className="font-bold text-primary">Projects</h2>
+        {data.map(({ name, date, shortDesc, longDesc, tech_stack }, index) => {
+          return (
+            <div className="mt-4" key={index}>
+              <div className="flex flex-col md:flex-row md:items-baseline ">
+                <h4 className="font-semibold">{name}</h4>
+                <span className="italic md:ml-2">{shortDesc}</span>
+                <span className="pb-2 text-sm text-gray-700 md:ml-auto">{date}</span>
+              </div>
+              <p>{longDesc}</p>
+              <div className="flex flex-wrap pb-8">
+                <span className="w-full mb-2 mr-2 text-sm text-gray-700 md:w-auto">Primary Technologies:</span>
+                {tech_stack.map(item => (
+                  <span className="px-2 mb-2 mr-2 text-sm text-gray-600 bg-gray-300 rounded">{item}</span>
+                ))}
+              </div>
             </div>
-            <p className="py-2">{longDesc}</p>
-          </section>
-        );
-      })}
+          );
+        })}
+      </div>
     </section>
   );
 };
