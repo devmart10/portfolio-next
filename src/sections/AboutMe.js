@@ -3,9 +3,11 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <section className="mb-4 bg-white card">
-      <a className="block mb-4 text-3xl font-bold text-primary">About Me</a>
-      <p className="">This is a little snippet about me.</p>
+    <section id="about-me">
+      <div className="mb-4 bg-white card">
+        <h2 className="font-bold text-primary">About Me</h2>
+        <p>This is a little snippet about me.</p>
+      </div>
     </section>
   );
 };
