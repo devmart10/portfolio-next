@@ -5,16 +5,9 @@ const Work = () => {
   return (
     <section id="work">
       <div className="mb-4 bg-white card">
-        <h2 className="font-bold text-primary">Resume</h2>
-
-        <h3>Summary of Qualifications</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolore quaerat error dolorum consectetur,
-          iure dolor amet provident eligendi quo.
-        </p>
-        <h3 className="mt-4">Work Experience</h3>
+        <h2 className="font-bold text-primary">Work Experience</h2>
         {data.map((job, index) => {
-          const { name, date, shortDesc, longDesc } = job;
+          const { name, date, shortDesc, longDesc, tech_stack } = job;
           return (
             <div className="mt-4" key={index}>
               <div className="flex flex-col md:flex-row md:items-baseline ">
@@ -23,6 +16,12 @@ const Work = () => {
                 <span className="pb-2 text-sm text-gray-700 md:ml-auto">{date}</span>
               </div>
               <p>{longDesc}</p>
+              <div className="flex flex-wrap pb-8">
+                <span className="w-full mb-2 mr-2 text-sm text-gray-700 md:w-auto">Primary Technologies:</span>
+                {tech_stack.map(item => (
+                  <span className="px-2 mb-2 mr-2 text-sm text-gray-600 bg-gray-300 rounded">{item}</span>
+                ))}
+              </div>
             </div>
           );
         })}
