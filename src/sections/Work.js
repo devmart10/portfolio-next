@@ -7,7 +7,7 @@ const Work = () => {
       <div className="mb-4 bg-white card">
         <h2 className="font-bold text-primary">Work Experience</h2>
         {data.map((job, index) => {
-          const { name, date, shortDesc, longDesc, tech_stack, img } = job;
+          const { name, date, shortDesc, longDesc, tech_stack, img, location } = job;
           return (
             <div className="mt-4" key={index}>
               <div className="flex flex-col md:flex-row md:items-center ">
@@ -18,6 +18,8 @@ const Work = () => {
                 <span className="italic md:ml-2">{shortDesc}</span>
                 <span className="pb-2 text-sm text-gray-700 md:ml-auto">{date}</span>
               </div>
+              <p className="text-sm text-gray-700">{location}</p>
+
               <p>{longDesc}</p>
               <div className="flex flex-wrap pb-8">
                 <span className="w-full mb-2 mr-2 text-sm text-gray-700 md:w-auto">Primary Technologies:</span>
