@@ -24,7 +24,7 @@ const Work = () => {
               <div className="flex flex-wrap pb-8">
                 <span className="w-full mb-2 mr-2 text-sm text-gray-700 md:w-auto">Primary Technologies:</span>
                 {tech_stack.map(item => (
-                  <span className="px-2 mb-2 mr-2 text-sm text-gray-600 bg-gray-300 rounded">{item}</span>
+                  <span className="mb-2 mr-2 tag">{item}</span>
                 ))}
               </div>
             </div>
