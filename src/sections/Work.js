@@ -7,11 +7,14 @@ const Work = () => {
       <div className="mb-4 bg-white card">
         <h2 className="font-bold text-primary">Work Experience</h2>
         {data.map((job, index) => {
-          const { name, date, shortDesc, longDesc, tech_stack } = job;
+          const { name, date, shortDesc, longDesc, tech_stack, img } = job;
           return (
             <div className="mt-4" key={index}>
-              <div className="flex flex-col md:flex-row md:items-baseline ">
-                <h4 className="font-semibold">{name}</h4>
+              <div className="flex flex-col md:flex-row md:items-center ">
+                <div className="flex items-end mb-2">
+                  <img src={img} alt={name} className="w-8 h-8 mr-2 rounded-full" />
+                  <h4 className="m-0 font-semibold">{name}</h4>
+                </div>
                 <span className="italic md:ml-2">{shortDesc}</span>
                 <span className="pb-2 text-sm text-gray-700 md:ml-auto">{date}</span>
               </div>
