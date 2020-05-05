@@ -3,7 +3,7 @@ import data from "../data/education.json";
 
 const Education = () => {
   return (
-    <section id="education">
+    <section id="education" className="wow fadeInUp">
       <div className="mb-4 bg-white card">
         <h2 className="font-bold text-primary">Education</h2>
         {data.map(({ name, date, degree, img }, index) => {

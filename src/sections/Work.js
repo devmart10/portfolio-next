@@ -3,7 +3,7 @@ import data from "../data/work.json";
 
 const Work = () => {
   return (
-    <section id="work">
+    <section id="work" className="wow fadeInUp">
       <div className="mb-4 bg-white card">
         <h2 className="font-bold text-primary">Work Experience</h2>
         {data.map((job, index) => {

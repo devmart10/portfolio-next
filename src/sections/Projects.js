@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import data from "../data/projects.json";
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <section id="projects" className="wow fadeInUp">
       <div className="mb-4 bg-white card">
         <h2 className="font-bold text-primary">Projects</h2>
         {data.map(({ name, date, shortDesc, longDesc, tech_stack }, index) => {

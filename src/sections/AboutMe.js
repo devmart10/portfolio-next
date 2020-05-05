@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <section id="about-me">
+    <section id="about-me" className="wow fadeInUp">
       <div className="mb-4 bg-white card">
         <h2 className="font-bold text-primary">About Me</h2>
         <h4>Hello, and welcome!</h4>
