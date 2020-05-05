@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Cal Poly, San Luis Obispo",
+    "date": "Sep. 2014 - Dec. 2018",
+    "degree": "Bachelor's Degree in Software Engineering",
+    "img": "/cal_poly.png"
+  },
+  {
+    "name": "College Park High School",
+    "date": "Sep. 2010 - Jun. 2014",
+    "degree": "High School Diploma",
+    "img": "/cp.png"
+  }
+]
